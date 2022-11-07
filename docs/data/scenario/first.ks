@@ -1,46 +1,81 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="今日の晩御飯"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「今日の晩御飯をどうしようか」[l][r]
 
-メロスは激怒した。[l][r]
+Ｒさんは最近太り気味です。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+昨日はビュッフェで暴飲暴食してしまったので、
+今日の晩御飯は抑えめにしなければ…[l][r]
 
-(中略)[l][r]
+女性の一日の平均摂取カロリーは2000から2500kcal[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+今日の朝ご飯はパン、お昼はナポリタンを食べた[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+では、今日の夜ご飯は…？[l][r]
+
+[link target=*tag_curry] →カレー [endlink][r]
+[link target=*tag_soba] →そば [endlink][r]
+
 [s]
 
-*tag_sleep
+*tag_curry
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=curry_indian_man.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+Ｒさんはカレーをほおばった[l][r]
+幸福な時間であった[l][r]
+次の日…[l][r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_see] →体重計に乗る
+
+[link target=*tag_ignore] →体重計なんて見ない
+
+[s]
+
+*tag_see
+
+[cm]
+
+[bg storage=undou.png time=500]
+
+
+Ｒさんは体重を見てあぜんとし、その日からジムに通い始めた[l]
+
+
+【 GOOD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_ignore
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=taberu.png time=500]
+
+
+Ｒさんはそれからもおいしいものを食べ続けました…[l]
+
+
+【 HAPPY END? 】[l][cm]
+
+[jump target=*start]
+
+*tag_soba
+
+[bg storage=soba_tororo.png time=500]
+
+[cm]
+Ｒさんはそばをおなか一杯おいしく食べた。[l][r]
+そばのカロリーは270kcalであり、ナポリタンは600kcal、パンは350kcalである。[l][r]
+Ｒさんは晩御飯を控えめにしたおかげで、ケーキを食後に食べることができました。
+
+【 HAPPY END 】[l][cm]
 
 [jump target=*start]
